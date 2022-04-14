@@ -1,0 +1,9 @@
+/* class là .
+id là # */
+* {
+	margin: 0;
+	position: 0;
+}
+.nav-item{
+	margin-left:20px;
+}

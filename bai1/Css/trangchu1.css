@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+.navbar-brand img{
+    width:60px; 
+    height: 40px;
+    
+}
+
+.nav-item{
+	margin-left:20px;
+}
+.dropdown-menu1 img{
+	width: 30;
+	height: 30px;
+}
+.dropdown-menu1{
+    display: none;
+    background-color: rgb(245, 243, 243);
+    z-index: 1;
+}
+.nav-item:hover .dropdown-menu1{
+    display: block;
+    position: absolute;
+}
+
+.form-inline .form-control{
+	width: 70%;
+}
+.btn-primary{
+    margin-top: 3px;
+  }
+
+
+
+/*display: flex; cho nằm ngang
+ justify-content: center;cho nằm giữa
+ align-items: center; cho độ cao ngắn lại*/
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+  .container{
+    background-color: #e2f3e2;
+    width: 1200px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 100px 0 auto;
+}
+
+.container .filter_name{
+  margin-bottom: 40px;
+}
+.container .filter_name .allfood{
+  border: none;
+  background: var(--primary-color);
+  color: white;

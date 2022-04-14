@@ -1,0 +1,229 @@
+/* class là .
+id là # */
+* {
+	margin: 0;
+	position: 0;
+}
+
+.navbar-brand img{
+  width:60px; 
+  height: 40px;
+}
+.nav-item{
+	margin-left:20px;
+}
+.dropdown-menu img{
+	width: 30;
+	height: 30px;
+}
+
+/*.banner{
+	height: 100%;
+	width: 100%;
+	object-fit: fill;
+	overflow: hidden;
+}*/
+.form-inline .form-control{
+	width: 70%;
+}
+.btn-primary{
+  margin-top: 3px;
+}
+
+.dropdown-menu1{
+  display: none; /*cho thuộc tính ẩn*/
+  /* position: relative; phân cấp lớp cha con */
+  background-color: #fff;
+  z-index: 1; /*hàm ưu tiên*/
+}
+.nav-item:hover .dropdown-menu1{ /*cho thuộc tính nổi nhưng phải phân cấp*/
+  display: block; /* hiển thị */
+  position: absolute; /*có khoản dư */
+
+}
+
+
+
+.dropdown-menu2{
+  display: none; /*cho thuộc tính ẩn*/
+  position: relative; /*phân cấp lớp cha con*/
+  background-color: #fff;
+  z-index: 1; /*hàm ưu tiên*/
+}
+.nav-item:hover .dropdown-menu2{ /*cho thuộc tính nổi nhưng phải phân cấp*/
+  display: block; /*hiển thị*/
+  position: absolute;
+
+}
+
+
+
+  .slideshow-container {
+	max-width: 100%;       /*nãy m để 500px*/  
+	position: relative; /* thuộc tính cha con xuất hiện chữ */
+	margin: auto;
+  }
+  /* Ẩn các slider */
+  /* .mySlides {
+	  display: none;
+  } */
+ 
+
+
+.img_slider{
+  width: 100%;
+  height: 600px;
+
+}
+  /* Định dạng nội dung Caption */
+  .text {
+	color: #f2f2f2;
+	font-size: 25px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+  }
+  
+   
+  /* định dạng các chấm chuyển đổi các slide */
+  .dot {
+	cursor:pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  /* khi được hover, active đổi màu nền */
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+   
+  /* Thêm hiệu ứng khi chuyển đổi các slide */
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 3s;
+	animation-name: fade;
+	animation-duration: 3s;
+  }
+   
+  @-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+   
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .img_slider {height: 250px;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+   @media only screen and (min-width: 600px) {  /*cái màn hình tương đương */
+    .img_slider {height: 350px;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .img_slider {height: 450px;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .img_slider {height: 550px;}
+  } 
+  @media only screen and (min-width: 1200px) {
+    .img_slider {height: 600px;}
+  }
+
+
+.container h2{
+  text-align: center;
+}
+
+
+#hien ul{
+  text-align: center;
+  list-style-type: none; /*mất dấu chấm*/
+}
+#hien li {
+  display: inline-block; /*theo hàng ngang*/
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+}
+#hien li img{
+  height: 100%;
+}
+
+
+#space {
+  padding:20px;  
+  height: 500px;
+}
+/* #hien1 img{
+   width: 100%;
+  height: 60px;
+  width: auto; 
+  margin-right: 5px; 
+  margin-top: 50px; 
+} */
+#hien1{
+  row-gap: 20px; /* tách từng khung */
+}
+
+ /* #hien1 div{ 
+  left: auto;
+  /* margin: 10px; 
+
+}   */
+
+#hien1 button{
+  width: 150px;
+}
+
+#hien1 button:hover{
+   animation: click_button_animation 1s ease; /*hiệu ứng*/
+} 
+
+@keyframes click_button_animation{  
+  from{
+    border-radius: 0px;
+  }
+  to {
+    border-radius: 20px;
+  }
+}
+
+
+#menu{
+  margin-top: 10px;
+}
+/* #menu img{
+  width: 350px;
+  height: 263px;
+} */
+#menu2 div{
+  padding: 10px;
+  border: 5px solid gray;
+  margin-top: 5px;
+}
+
+#menu2 img {
+ object-fit: cover;   /*vừa và không bị vỡ độ rộng phía trên */
+  width: 100%;
+  height: 263px;
+}
+
+
+
+#background{
+  background-image: url('img/menu1.png');
+}

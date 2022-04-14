@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Trang chủ1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src='main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Css/trangchu.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+        <!-- <a class="navbar-brand" href="#">Thực phẩm</a> -->
+        <a class="navbar-brand" href="#">
+          <img src="../img/anh2.png" style="width:60px; height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Món khai vị</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nước chính</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Món tráng miệng</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">Nước uống</a>
+          </li>
+
+      
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                            Món truyền thống</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Phở</a>
+              <a class="dropdown-item" href="#">Bánh xòe</a>
+              <a class="dropdown-item" href="#">Bánh chưng, bánh giầy</a>
+            </div>
+          </li>
+
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              <img src="../img/diacau.png">
+
+              VN</a>
+            <div class="dropdown-menu" >
+              <a class="dropdown-item" href="#"><img src="../img/nuoc1.png">JP</a>
+              <a class="dropdown-item" href="#"><img src="../img/nuoc2.png">VN</a>
+              <a class="dropdown-item" href="#"><img src="../img/nuoc3.png">KR</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href=""> Đăng nhập</a>
+          </li>
+          <li class="nav-item">
+             <button type="button" class="btn btn-primary">Primary</button>
+          </li>
+
+           <form class="form-inline" action="/action_page.php" style="margin-left: 20px; ">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+
+        </ul>
+        </div>
+      </nav>
+
+      <div class="slideshow-container">
+        <!-- <h2>Freetus.net hướng dẫn tạo slideShow đơn giản</h2> -->
+        <div class="mySlides fade">
+          <img src="../img/nen1.png" class="img_slider" width="100%" height="600px" >
+          <div class="text">Cơm tết miền Trung</div>
+        </div>
+       
+        <div class="mySlides fade">
+          <img src="../img/nen2.png" class="img_slider" width="100%" height="600px" >
+          <div class="text">Cơm tết miền Nam</div>
+        </div>
+       
+        <div class="mySlides fade">
+          <img src="../img/nen3.png" class="img_slider" width="100%" height="600px" >
+          <div class="text">Cơm tết miền Bắc</div>
+        </div>
+      </div>
+      <br>
+       
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>
+
+
+
+
+      <marquee id="marq" scrollamount="5" loop="50" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()">
+          <a href="Link"><img src="../img/slide1.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide2.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide3.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide4.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide5.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide6.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide2.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide3.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide4.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide5.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+
+      </marquee>
+
+      <div>Văn bản là một loại hình phương tiện để ghi nhận, lưu giữ và truyền đạt các thông tin từ chủ thể này 
+        sang chủ thể khác bằng ký hiệu gọi là chữ viết. Nó gồm tập hợp các câu có tính trọn vẹn về nội dung, 
+        hoàn chỉnh về hình thức, có tính liên kết chặt chẽ và hướng tới một mục tiêu giao tiếp nhất định.[1][2][3][4] 
+        Hay nói khác đi, văn bản là một dạng sản phẩm của hoạt động giao tiếp bằng ngôn ngữ được thể hiện ở dạng viết 
+        trên một chất liệu nào đó (giấy, bia đá,...). Văn bản bao gồm các tài liệu, tư liệu, giấy tờ có giá trị pháp 
+        lý nhất định, được sử dụng trong hoạt động của các cơ quan Nhà nước, các tổ chức chính trị, chính trị - xã hội, 
+        các tổ chức kinh tế... như: các văn bản pháp luật, các công văn, tài liệu, giấy tờ.</div>
+
+
+    <marquee id="marq" scrollamount="5" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()">
+      <script>
+      var images = [
+          "slide1.png","slide2.png","slide3.png", "slide4.png", "slide5.png"
+        ];
+        var num = 1;
+        for(var i = 1; i <= images.length; i++) {
+        document.write('<img src="img/slide'+ i +'.png" style="width:300px; height: 200px; margin-left:2.5px; margin-right:2.5px;"/>');
+          if( i == images.length)
+          {
+            num++;
+            if (num == 50)
+            {
+            break;
+            }
+            else{
+              i=0;
+            }
+          }
+        
+      }
+      </script>
+    </marquee>
+
+
+
+
+      <script>
+        //khai báo biến slideIndex đại diện cho slide hiện tại
+        var slideIndex;
+        // KHai bào hàm hiển thị slide
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+       
+            slides[slideIndex].style.display = "block";  
+            dots[slideIndex].className += " active";
+            //chuyển đến slide tiếp theo
+            slideIndex++;
+            //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+            if (slideIndex > slides.length - 1) {
+              slideIndex = 0
+            }    
+            //tự động chuyển đổi slide sau 5s
+            setTimeout(showSlides, 3000);
+        }
+        //mặc định hiển thị slide đầu tiên 
+        showSlides(slideIndex = 0);
+       
+       
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+      </script>
+      
+
+
+     
+    
+</body>
+</html>
+
+<!-- em thêm margin left
+thì phải thêm margin-right
+vì khi responsive trên di động
+nó sẽ canh có left ak
+nên emếu margin left 2.5 và margin right 2.5
+nó mới đều -->

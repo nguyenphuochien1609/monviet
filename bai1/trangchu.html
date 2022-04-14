@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Trang chủ</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src='main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Css/trangchu.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="fix">
+          
+        <a class="navbar-brand" href="#">
+          <img src="../img/anh2.png" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Món khai vị</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Món chính</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Món tráng miệng</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">Nước uống</a>
+          </li>
+
+      
+          <!-- Dropdown -->
+          <li class="nav-item ">
+            <a class="nav-link dropdown-toggle">Món truyền thống</a>
+            <div class="dropdown-menu1">
+              <a class="dropdown-item" href="#">Phở</a>
+              <a class="dropdown-item" href="#">Bánh xòe</a>
+              <a class="dropdown-item" href="#">Bánh chưng, bánh giầy</a>
+            </div>
+          </li>
+
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" >
+              <img src="../img/diacau.png"> VN</a>
+            <div class="dropdown-menu2" >
+              <a class="dropdown-item" href="#"><img src="../img/nuoc1.png">JP</a>
+              <a class="dropdown-item" href="#"><img src="../img/nuoc2.png">VN</a>
+              <a class="dropdown-item" href="#"><img src="../img/nuoc3.png">KR</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href=""> Đăng nhập</a>
+          </li>
+          <li class="nav-item">
+             <button type="button" class="btn btn-primary">Primary</button>
+          </li>
+
+           <form class="form-inline" action="/action_page.php" style="margin-left: 20px; ">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+
+        </ul>
+        </div>
+      </nav>
+
+      <div class="slideshow-container">
+        <!-- <h2>Freetus.net hướng dẫn tạo slideShow đơn giản</h2> -->
+        <div class="mySlides fade">
+          <img src="../img/nen1.png" class="img_slider"  >
+          <div class="text">Cơm tết miền Trung</div>
+        </div>
+       
+        <div class="mySlides fade">
+          <img src="../img/nen2.png" class="img_slider" >
+          <div class="text">Cơm tết miền Nam</div>
+        </div>
+       
+        <div class="mySlides fade">
+          <img src="../img/nen3.png" class="img_slider" >
+          <div class="text">Cơm tết miền Bắc</div>
+        </div>
+      </div>
+      <br>
+       
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>
+
+
+
+      <marquee id="marq" scrollamount="5" loop="50" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()">
+          <a href="Link"><img src="../img/slide1.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide2.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide3.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide4.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide5.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide6.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide2.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide3.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide4.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+          <a href="Link"><img src="../img/slide5.png" title="Ghi chú cho ảnh" width="300" height="200"/> </a>
+
+      </marquee>
+
+
+    <div class="container" id="hien">
+      <h2>Sở hữu những món ăn truyền thống xen kẽ hiện đại từ xưa đến nay</h2>
+      <ul>
+        <li><img src="img/icon1.png"> Truyền thống</li>
+        <li><img src="img/icon2.png"> Truyền thống</li>
+        <li><img src="img/icon3.png"> Đặc sắc</li>
+      </ul>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row" id="hien1" >
+        <div class="col-sm-4">
+          <div id="space"  style="background-color:lavender; ">
+            <img src="img/fb.png" >
+            <p style="font-size: 20px;">Facebook channel</p>
+            <p>Bạn có thể quản lý tất cả các dịch vụ được cung cấp bởi Facebook một cách thông minh ngay tại facebook chanel</p>
+            <button type="button" class="btn btn-primary">Tìm hiểu thêm</button>
+          </div>
+        </div>
+        <div class="col-sm-4" >
+          <div id="space" style="background-color:rgb(216, 216, 247); ">
+            <img src="img/tinnhan.png" >
+            <p style="font-size: 20px;">Bảng tin</p>
+            <p>Hãy sử dụng bản tin để liên hệ với khách hàng của bạn</p>
+            <button type="button" class="btn btn-primary">Tìm hiểu thêm</button>
+          </div>
+        </div>
+        <div class="col-sm-4" >
+          <div id="space" style="background-color:rgb(221, 221, 248); ">
+            <img src="img/edibo.png" >
+            <p style="font-size: 20px;">Edibot Social</p>
+            <p>Bạn có thể quản lý tất cả các dịch vụ được cung cấp bởi Facebook một cách thông minh ngay tại facebook chanel</p>
+            <button type="button" class="btn btn-primary">Tìm hiểu thêm</button>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row" id="hien1" style="padding-top: 20px;" >
+        <div class="col-sm-4">
+          <div id="space"  style="background-color:lavender; ">
+            <img src="img/app.png" >
+            <p style="font-size: 20px;">App xác thực EZ Way</p>
+            <p>Bạn có thể quản lý tất cả các dịch vụ được cung cấp bởi Facebook một cách thông minh ngay tại facebook chanel</p>
+            <button type="button" class="btn btn-primary">Tìm hiểu thêm</button>
+          </div>
+        </div>
+        <div class="col-sm-4" >
+          <div id="space" style="background-color:rgb(174, 174, 202); ">
+            <img src="img/xe.png" >
+            <p style="font-size: 20px;">Delivery Marter</p>
+            <p>Bạn có thể quản lý tất cả các dịch vụ được cung cấp bởi Facebook một cách thông minh ngay tại facebook chanel</p>
+            <button type="button" class="btn btn-primary">Tìm hiểu thêm</button>
+          </div>
+        </div>
+        <div class="col-sm-4" >
+          <div id="space" style="background-color:rgb(219, 219, 240); ">
+            <img src="img/bongden.png" >
+            <p style="font-size: 20px;">Đề xuất thông minh</p>
+            <p>Bạn có thể quản lý tất cả các dịch vụ được cung cấp bởi Facebook một cách thông minh ngay tại facebook chanel</p>
+            <button type="button" class="btn btn-primary">Tìm hiểu thêm</button>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <div class="container-fluid" id="menu">
+      <div class="row" >
+        <div class="col-sm-3" id="menu2">
+          <img src="img/menu1.png" >
+          <div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+        </div>
+
+        <div class="col-sm-3" id="menu2">
+          <img src="img/menu2.png" >
+          <div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+        </div>
+
+        <div class="col-sm-3" id="menu2">
+          <img src="img/menu4.png" >
+          <div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+        </div>
+
+        <div class="col-sm-3" id="menu2">
+          <img src="img/menu5.png"  >
+          <div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+        </div>
+
+      </div>
+      
+    </div>
+
+
+    <div class="container-fluid" id="menu">
+      <div class="row" >
+        <div class="col-sm-3" id="menu2">
+          <img src="img/menu3.png" >
+          <div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+        </div>
+
+        <div class="col-sm-3" id="menu2">
+          <img src="img/menu6.png" >
+          <div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+        </div>
+
+        <div class="col-sm-3" id="menu2">
+          <img src="img/menu7.png" >
+          <div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+        </div>
+
+        <div class="col-sm-3" id="menu2">
+          <img src="img/menu8.png"  >
+          <div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <h1 style="text-align: center;"> Mô tả món ăn</h1>
+    <div class="mota" style="display: flex; align-items: center; justify-content: space-between; padding: 0 15px">
+      <div class="detail" style="display: flex; padding:30px 0; align-items: center; ">
+      
+        <div class="nguyenlieu">
+          <h3 >Nguyên liệu món mì quảng</h3>
+          <ul>
+            <li>Mì sợi</li>
+            <li>rau sống </li>
+            <li>Trứng cút</li>
+            <li>Bánh tráng</li>
+            <li>nước mắm</li>
+          </ul>
+        </div>
+        <div class="img" style="padding: 0 10px">
+          <img src="img/menu1.png" style="border-radius: 5px;  object-position: center;">
+        </div>
+      </div>
+
+      <div class="detail" style="display: flex; padding:30px 0; align-items: center; ">
+      
+        <div class="nguyenlieu">
+          <h3 >Nguyên liệu món mì quảng</h2>
+          <ul>
+            <li>Mì sợi</li>
+            <li>rau sống </li>
+            <li>Trứng cút</li>
+            <li>Bánh tráng</li>
+            <li>nước mắm</li>
+          </ul>
+        </div>
+        <div class="img"style="padding: 0 10px">
+          <img src="img/menu1.png" style="border-radius: 5px; object-fit: cover; object-position: center;">
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="container-fluid" id="mota" style="margin-top: 10px;">
+      <h1 style="text-align: center;"> MÔ TẢ MÓN ĂN</h1>
+      <div class="row" id="mota1">
+        <div class="col-sm-8">
+          <h3> Nguyên liệu</h3>
+          <ul>
+            <li>Mì sợi</li>
+            <li>rau sống </li>
+            <li>Trứng cút</li>
+            <li>Bánh tráng</li>
+            <li>nước mắm</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+            nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, 
+            ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+            Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum 
+            ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero 
+            sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer 
+            fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris 
+            quis diam velit.</p>
+
+
+        </div>
+
+        <div class="col-sm-4"> 
+          <img src="img/menu2.png" style="width: 300px; height: 300px; margin-left: 30px; ">
+        </div>
+
+      </div>
+
+    </div>
+
+
+      <div id="background" style="background-image: url(img/menu1.png);">
+        <h2>Background Repeat</h2>
+        <p>By default, the background image will repeat itself if it is smaller than the element 
+         where it is specified, in this case the body element.</p>
+      </div>
+
+
+
+
+ <div style="background-color: #DE2025FF; height: 500px;"> ád</div>
+    
+
+
+
+      <script>
+        //khai báo biến slideIndex đại diện cho slide hiện tại
+        var slideIndex;
+        // KHai bào hàm hiển thị slide
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+       
+            slides[slideIndex].style.display = "block";  
+            dots[slideIndex].className += " active";
+            //chuyển đến slide tiếp theo
+            slideIndex++;
+            //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+            if (slideIndex > slides.length - 1) {
+              slideIndex = 0
+            }    
+            //tự động chuyển đổi slide sau 5s
+            setTimeout(showSlides, 3000);
+        }
+        //mặc định hiển thị slide đầu tiên 
+        showSlides(slideIndex = 0);
+       
+       
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+      </script>
+      
+
+
+     
+    
+</body>
+</html>
+
+<!-- em thêm margin left
+thì phải thêm margin-right
+vì khi responsive trên di động
+nó sẽ canh có left ak
+nên emếu margin left 2.5 và margin right 2.5
+nó mới đều -->
